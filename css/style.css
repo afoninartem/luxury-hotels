@@ -1,0 +1,235 @@
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/cormorant-garamond-v9-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/cormorant-garamond-v9-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/montserrat-v15-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v15-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  color: #14274a;
+}
+
+.wrapper {
+  width: 1920px;
+  margin: 0 auto;
+}
+
+.wrapper-details {
+  width: 1570.5px;
+  margin: 0 auto;
+}
+
+.header {
+  /* position: relative; */
+  background-image: linear-gradient(
+      rgba(20, 39, 74, 0.5),
+      rgba(20, 39, 74, 0.5)
+    ),
+    url("../img/home-img/home-header.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  width: 1497.79px;
+  margin: 0 auto;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 38px;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 256px;
+  height: 149px;
+  background: #e0b973;
+  border-radius: 0 0 65px 65px;
+  display: grid;
+  place-items: center;
+}
+
+.logo__text {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.logo__text-large {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.2rem;
+}
+
+.logo__text-small {
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.5rem;
+}
+
+.header__nav-items {
+  display: flex;
+}
+
+.header__nav-item a {
+  color: #fff;
+  font-size: 25px;
+  line-height: 30px;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+/* .active-section is for js-script */
+.header__nav-item a:hover,
+.header__nav-item .active-section-js {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.intro__greeting {
+  color: #fff;
+}
+
+.greeting {
+  font-size: 50px;
+  line-height: 61px;
+}
+
+.intro__title {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+  font-size: 154px;
+  line-height: 1;
+  letter-spacing: 0.07em;
+}
+
+.intro__title-small {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: 0.4em;
+}
+
+.header__intro p {
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+}
+
+.book__btn {
+  position: relative;
+  border: none;
+  background: #e0b973;
+  border-radius: 10px;
+  padding: 1.2rem 1.7rem;
+  color: #fff;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  max-width: 268px;
+  align-self: center;
+}
+
+.btn-icon {
+  margin-right: 18px;
+  transform: translateY(-2px);
+}
+
+.scroll-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scroll-block p {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.scroll__btn {
+  border: none;
+  background: transparent;
+}
+
+/* HEADER ↑ */
+
+/* BREAKFAST ↓ */
+
+.breakfast {
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  padding: 5rem 0;
+}
+
+/* BREAKFAST ↑ */
+
+/* HOME DESC ↓ */
+
+.row-desc__title {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: 0.02em;
+}
+
+.home-details__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.desc-pic-1 {
+  position: relative;
+  width: 866px;
+  height: 579px;
+  background: url('../img/home-img/home-desc-1-min.jpg') 100%/cover;
+}
+
+.gray-overlay:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0px; left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 39, 74, 0.2);
+}
+
